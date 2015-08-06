@@ -29,15 +29,7 @@ group = 'com.github.hathibelagal.librarytutorial'
 version = '1.0.2'
 
 task generatePOM << {
-    pom {
-        pom {
-            project {
-                groupId 'com.github.hathibelagal.librarytutorial'
-                artifactId "mylittlelibrary"
-                version '1.0.2'
-            }
-        }.writeTo("$buildDir/poms/pom-default.xml")
-    }
+    pom{}.writeTo("$buildDir/poms/pom-default.xml")
 }
 
 task generateSourcesJar(type: Jar) {
