@@ -28,10 +28,6 @@ dependencies {
 group = 'com.github.hathibelagal.librarytutorial'
 version = '1.0.2'
 
-task generatePOM << {
-    pom{}.writeTo("$buildDir/poms/pom-default.xml")
-}
-
 task generateSourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier 'sources'
