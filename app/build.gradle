@@ -24,12 +24,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.1.1'
 }
 
-repositories {
-    maven {
-        url 'https://dl.bintray.com/eruzza/maven'
-    }
-}
-
 dependencies {
-    compile 'com.github.hathibelagal.librarytutorial:mylittlelibrary:1.0.0@aar'
+    compile 'com.github.hathibelagal.librarytutorial:mylittlelibrary:1.0.1@aar'
 }
