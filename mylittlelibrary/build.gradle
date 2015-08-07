@@ -45,12 +45,9 @@ task generateJavaDocsJar(type: Jar) {
 }
 generateJavaDocsJar.dependsOn generateJavaDocs
 
-task runMyTasks
-runMyTasks.dependsOn(generatePOM, generateSourcesJar, generateJavaDocsJar)
-
 bintray {
-    user = 'eruzza'
-    key = ''
+    user = 'YOUR_USERNAME'
+    key = 'YOUR_API_KEY'
     pkg {
         repo = 'maven'
         name = 'com.github.hathibelagal.mylittlelibrary'
